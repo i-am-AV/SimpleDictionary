@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		FD33AFAF2C975EF40057CF4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */; };
 		FD33AFB12C975EF40057CF4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */; };
-		FD33AFB32C975EF40057CF4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFB22C975EF40057CF4E /* ViewController.swift */; };
-		FD33AFB62C975EF40057CF4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD33AFB42C975EF40057CF4E /* Main.storyboard */; };
 		FD33AFB82C975EF50057CF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD33AFB72C975EF50057CF4E /* Assets.xcassets */; };
-		FD33AFBB2C975EF50057CF4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD33AFB92C975EF50057CF4E /* LaunchScreen.storyboard */; };
 		FD33AFC62C975EF50057CF4E /* SimpleDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFC52C975EF50057CF4E /* SimpleDictionaryTests.swift */; };
 		FD33AFD02C975EF50057CF4E /* SimpleDictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFCF2C975EF50057CF4E /* SimpleDictionaryUITests.swift */; };
 		FD33AFD22C975EF50057CF4E /* SimpleDictionaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFD12C975EF50057CF4E /* SimpleDictionaryUITestsLaunchTests.swift */; };
+		FD33AFDF2C9763840057CF4E /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFDE2C9763840057CF4E /* WordListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +37,14 @@
 		FD33AFAB2C975EF40057CF4E /* SimpleDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD33AFB22C975EF40057CF4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD33AFB52C975EF40057CF4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD33AFB72C975EF50057CF4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD33AFBA2C975EF50057CF4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD33AFBC2C975EF50057CF4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD33AFC12C975EF50057CF4E /* SimpleDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD33AFC52C975EF50057CF4E /* SimpleDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDictionaryTests.swift; sourceTree = "<group>"; };
 		FD33AFCB2C975EF50057CF4E /* SimpleDictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD33AFCF2C975EF50057CF4E /* SimpleDictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDictionaryUITests.swift; sourceTree = "<group>"; };
 		FD33AFD12C975EF50057CF4E /* SimpleDictionaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDictionaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD33AFDE2C9763840057CF4E /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +97,8 @@
 			children = (
 				FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */,
 				FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */,
-				FD33AFB22C975EF40057CF4E /* ViewController.swift */,
-				FD33AFB42C975EF40057CF4E /* Main.storyboard */,
+				FD33AFDE2C9763840057CF4E /* WordListViewController.swift */,
 				FD33AFB72C975EF50057CF4E /* Assets.xcassets */,
-				FD33AFB92C975EF50057CF4E /* LaunchScreen.storyboard */,
 				FD33AFBC2C975EF50057CF4E /* Info.plist */,
 			);
 			path = SimpleDictionary;
@@ -231,9 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD33AFBB2C975EF50057CF4E /* LaunchScreen.storyboard in Resources */,
 				FD33AFB82C975EF50057CF4E /* Assets.xcassets in Resources */,
-				FD33AFB62C975EF40057CF4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD33AFB32C975EF40057CF4E /* ViewController.swift in Sources */,
 				FD33AFAF2C975EF40057CF4E /* AppDelegate.swift in Sources */,
+				FD33AFDF2C9763840057CF4E /* WordListViewController.swift in Sources */,
 				FD33AFB12C975EF40057CF4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,25 +287,6 @@
 			targetProxy = FD33AFCC2C975EF50057CF4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FD33AFB42C975EF40057CF4E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD33AFB52C975EF40057CF4E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FD33AFB92C975EF50057CF4E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD33AFBA2C975EF50057CF4E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FD33AFD32C975EF50057CF4E /* Debug */ = {
@@ -447,9 +420,10 @@
 				INFOPLIST_FILE = SimpleDictionary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,9 +449,10 @@
 				INFOPLIST_FILE = SimpleDictionary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
