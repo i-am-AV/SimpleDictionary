@@ -8,9 +8,4 @@
 import UIKit
 
 final class TestsViewController: ViewController {
-    // MARK: - Life cycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }

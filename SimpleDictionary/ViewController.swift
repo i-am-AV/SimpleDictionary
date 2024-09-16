@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     private func setupNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
+
     private func setupView() {
         view.backgroundColor = .systemBackground
     }
