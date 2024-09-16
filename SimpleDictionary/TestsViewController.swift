@@ -1,13 +1,13 @@
 //
-//  WordListViewController.swift
+//  TestsViewController.swift
 //  SimpleDictionary
 //
-//  Created by Alex Vasilyev on 15.09.2024.
+//  Created by Alex Vasilyev on 16.09.2024.
 //
 
 import UIKit
 
-final class WordListViewController: ViewController {
+final class TestsViewController: ViewController {
     // MARK: - Life cycle
 
     override func viewDidLoad() {

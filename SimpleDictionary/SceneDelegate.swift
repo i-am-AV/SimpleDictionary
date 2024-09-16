@@ -21,11 +21,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func setWindow(using windowScene: UIWindowScene) {
-        let wordListViewController = WordListViewController()
-        let navigationController = UINavigationController(rootViewController: wordListViewController)
-        
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = navigationController
+        window.rootViewController = TabBarController()
         window.makeKeyAndVisible()
         self.window = window
     }

@@ -14,6 +14,10 @@
 		FD33AFD02C975EF50057CF4E /* SimpleDictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFCF2C975EF50057CF4E /* SimpleDictionaryUITests.swift */; };
 		FD33AFD22C975EF50057CF4E /* SimpleDictionaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFD12C975EF50057CF4E /* SimpleDictionaryUITestsLaunchTests.swift */; };
 		FD33AFDF2C9763840057CF4E /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFDE2C9763840057CF4E /* WordListViewController.swift */; };
+		FD33AFE12C9783AF0057CF4E /* TestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE02C9783AF0057CF4E /* TestsViewController.swift */; };
+		FD33AFE32C9783D60057CF4E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */; };
+		FD33AFE52C97859B0057CF4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE42C97859B0057CF4E /* ViewController.swift */; };
+		FD33AFE72C97868F0057CF4E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE62C97868F0057CF4E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		FD33AFCF2C975EF50057CF4E /* SimpleDictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDictionaryUITests.swift; sourceTree = "<group>"; };
 		FD33AFD12C975EF50057CF4E /* SimpleDictionaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDictionaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FD33AFDE2C9763840057CF4E /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		FD33AFE02C9783AF0057CF4E /* TestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsViewController.swift; sourceTree = "<group>"; };
+		FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FD33AFE42C97859B0057CF4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD33AFE62C97868F0057CF4E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +105,11 @@
 			children = (
 				FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */,
 				FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */,
+				FD33AFE62C97868F0057CF4E /* TabBarController.swift */,
+				FD33AFE42C97859B0057CF4E /* ViewController.swift */,
 				FD33AFDE2C9763840057CF4E /* WordListViewController.swift */,
+				FD33AFE02C9783AF0057CF4E /* TestsViewController.swift */,
+				FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */,
 				FD33AFB72C975EF50057CF4E /* Assets.xcassets */,
 				FD33AFBC2C975EF50057CF4E /* Info.plist */,
 			);
@@ -250,8 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD33AFE52C97859B0057CF4E /* ViewController.swift in Sources */,
 				FD33AFAF2C975EF40057CF4E /* AppDelegate.swift in Sources */,
 				FD33AFDF2C9763840057CF4E /* WordListViewController.swift in Sources */,
+				FD33AFE32C9783D60057CF4E /* ProfileViewController.swift in Sources */,
+				FD33AFE72C97868F0057CF4E /* TabBarController.swift in Sources */,
+				FD33AFE12C9783AF0057CF4E /* TestsViewController.swift in Sources */,
 				FD33AFB12C975EF40057CF4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
