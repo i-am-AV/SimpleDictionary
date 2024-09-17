@@ -18,6 +18,8 @@
 		FD33AFE32C9783D60057CF4E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */; };
 		FD33AFE52C97859B0057CF4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE42C97859B0057CF4E /* ViewController.swift */; };
 		FD33AFE72C97868F0057CF4E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE62C97868F0057CF4E /* TabBarController.swift */; };
+		FDE76CAB2C98D6660031047F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FDE76CAA2C98D6660031047F /* Localizable.xcstrings */; };
+		FDE76CAD2C99CDAE0031047F /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE76CAC2C99CDAE0031047F /* LocalizedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FD33AFE42C97859B0057CF4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD33AFE62C97868F0057CF4E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FDE76CAA2C98D6660031047F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FDE76CAC2C99CDAE0031047F /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */,
 				FD33AFB72C975EF50057CF4E /* Assets.xcassets */,
 				FD33AFBC2C975EF50057CF4E /* Info.plist */,
+				FDE76CAE2C99CFA90031047F /* Localization */,
 			);
 			path = SimpleDictionary;
 			sourceTree = "<group>";
@@ -131,6 +136,15 @@
 				FD33AFD12C975EF50057CF4E /* SimpleDictionaryUITestsLaunchTests.swift */,
 			);
 			path = SimpleDictionaryUITests;
+			sourceTree = "<group>";
+		};
+		FDE76CAE2C99CFA90031047F /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FDE76CAA2C98D6660031047F /* Localizable.xcstrings */,
+				FDE76CAC2C99CDAE0031047F /* LocalizedString.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +233,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = FD33AFA22C975EF40057CF4E;
 			productRefGroup = FD33AFAC2C975EF40057CF4E /* Products */;
@@ -237,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE76CAB2C98D6660031047F /* Localizable.xcstrings in Resources */,
 				FD33AFB82C975EF50057CF4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +284,7 @@
 				FD33AFE32C9783D60057CF4E /* ProfileViewController.swift in Sources */,
 				FD33AFE72C97868F0057CF4E /* TabBarController.swift in Sources */,
 				FD33AFE12C9783AF0057CF4E /* TestsViewController.swift in Sources */,
+				FDE76CAD2C99CDAE0031047F /* LocalizedString.swift in Sources */,
 				FD33AFB12C975EF40057CF4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

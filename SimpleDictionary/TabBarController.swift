@@ -26,20 +26,26 @@ final class TabBarController: UITabBarController {
         let wordListNavigationController = UINavigationController(
             rootViewController: WordListViewController()
         )
-        #warning("Локализовать строку")
-        wordListNavigationController.config(with: "Словарь", and: .checkmark)
+        wordListNavigationController.config(
+            with: LocalizedString.WordListScreen.title,
+            and: .checkmark
+        )
 
         let testsNavigationController = UINavigationController(
             rootViewController: TestsViewController()
         )
-        #warning("Локализовать строку")
-        testsNavigationController.config(with: "Тесты", and: .checkmark)
+        testsNavigationController.config(
+            with: LocalizedString.TestsScreen.title,
+            and: .checkmark
+        )
 
         let profileNavigationController = UINavigationController(
             rootViewController: ProfileViewController()
         )
-        #warning("Локализовать строку")
-        profileNavigationController.config(with: "Профиль", and: .checkmark)
+        profileNavigationController.config(
+            with: LocalizedString.ProfileScreen.title,
+            and: .checkmark
+        )
 
         viewControllers = [
             wordListNavigationController,
