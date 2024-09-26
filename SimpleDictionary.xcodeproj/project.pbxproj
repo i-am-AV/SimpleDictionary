@@ -18,6 +18,8 @@
 		FD33AFE32C9783D60057CF4E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */; };
 		FD33AFE52C97859B0057CF4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE42C97859B0057CF4E /* ViewController.swift */; };
 		FD33AFE72C97868F0057CF4E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFE62C97868F0057CF4E /* TabBarController.swift */; };
+		FD94CA652CA4B3B800822925 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94CA642CA4B3B800822925 /* Fonts.swift */; };
+		FD94CA692CA575E900822925 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94CA682CA575E900822925 /* UIView+.swift */; };
 		FDE76CAB2C98D6660031047F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FDE76CAA2C98D6660031047F /* Localizable.xcstrings */; };
 		FDE76CAD2C99CDAE0031047F /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE76CAC2C99CDAE0031047F /* LocalizedString.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FD33AFE42C97859B0057CF4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD33AFE62C97868F0057CF4E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FD94CA642CA4B3B800822925 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FD94CA682CA575E900822925 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		FDE76CAA2C98D6660031047F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		FDE76CAC2C99CDAE0031047F /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,16 +111,11 @@
 		FD33AFAD2C975EF40057CF4E /* SimpleDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */,
-				FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */,
-				FD33AFE62C97868F0057CF4E /* TabBarController.swift */,
-				FD33AFE42C97859B0057CF4E /* ViewController.swift */,
-				FD33AFDE2C9763840057CF4E /* WordListViewController.swift */,
-				FD33AFE02C9783AF0057CF4E /* TestsViewController.swift */,
-				FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */,
-				FD33AFB72C975EF50057CF4E /* Assets.xcassets */,
-				FD33AFBC2C975EF50057CF4E /* Info.plist */,
+				FD94CA672CA4B66900822925 /* BaseComponents */,
+				FD94CA6A2CA575F000822925 /* Extensions */,
 				FDE76CAE2C99CFA90031047F /* Localization */,
+				FD94CA6B2CA5767000822925 /* Screens */,
+				FD94CA6E2CA577C600822925 /* Sources */,
 			);
 			path = SimpleDictionary;
 			sourceTree = "<group>";
@@ -138,6 +137,69 @@
 			path = SimpleDictionaryUITests;
 			sourceTree = "<group>";
 		};
+		FD94CA662CA4B66200822925 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD94CA642CA4B3B800822925 /* Fonts.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FD94CA672CA4B66900822925 /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FD94CA6C2CA5774500822925 /* Controllers */,
+				FD94CA6D2CA5778700822925 /* Delegates */,
+				FD94CA662CA4B66200822925 /* UI */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		FD94CA6A2CA575F000822925 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD94CA682CA575E900822925 /* UIView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FD94CA6B2CA5767000822925 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FD33AFDE2C9763840057CF4E /* WordListViewController.swift */,
+				FD33AFE02C9783AF0057CF4E /* TestsViewController.swift */,
+				FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FD94CA6C2CA5774500822925 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD33AFE62C97868F0057CF4E /* TabBarController.swift */,
+				FD33AFE42C97859B0057CF4E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD94CA6D2CA5778700822925 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */,
+				FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FD94CA6E2CA577C600822925 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FD33AFB72C975EF50057CF4E /* Assets.xcassets */,
+				FD33AFBC2C975EF50057CF4E /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		FDE76CAE2C99CFA90031047F /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD33AFD52C975EF50057CF4E /* Build configuration list for PBXNativeTarget "SimpleDictionary" */;
 			buildPhases = (
+				FD94CA632CA4A97A00822925 /* ShellScript */,
 				FD33AFA72C975EF40057CF4E /* Sources */,
 				FD33AFA82C975EF40057CF4E /* Frameworks */,
 				FD33AFA92C975EF40057CF4E /* Resources */,
@@ -273,6 +336,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FD94CA632CA4A97A00822925 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD33AFA72C975EF40057CF4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,9 +367,11 @@
 				FD33AFAF2C975EF40057CF4E /* AppDelegate.swift in Sources */,
 				FD33AFDF2C9763840057CF4E /* WordListViewController.swift in Sources */,
 				FD33AFE32C9783D60057CF4E /* ProfileViewController.swift in Sources */,
+				FD94CA692CA575E900822925 /* UIView+.swift in Sources */,
 				FD33AFE72C97868F0057CF4E /* TabBarController.swift in Sources */,
 				FD33AFE12C9783AF0057CF4E /* TestsViewController.swift in Sources */,
 				FDE76CAD2C99CDAE0031047F /* LocalizedString.swift in Sources */,
+				FD94CA652CA4B3B800822925 /* Fonts.swift in Sources */,
 				FD33AFB12C975EF40057CF4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,10 +536,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VY9AS466G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleDictionary/Info.plist;
+				INFOPLIST_FILE = SimpleDictionary/Sources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -478,10 +566,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VY9AS466G;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleDictionary/Info.plist;
+				INFOPLIST_FILE = SimpleDictionary/Sources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
