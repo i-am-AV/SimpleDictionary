@@ -80,6 +80,10 @@ extension UIView {
         }
     }
 
+    func pinToSuperview() {
+        pinToSuperview(sides: [.top(), .bottom(), .leading(), .trailing()])
+    }
+
     func pinToSuperview(sides: [Side]) {
         guard let superview else {
             assertionFailure("\(Self.self) must have a superview")

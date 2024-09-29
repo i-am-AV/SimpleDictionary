@@ -90,7 +90,7 @@ private extension WordListViewController {
     }
 
     func makeConstraints() {
-        tableView.pinToSafeAreaSuperview()
+        tableView.pinToSuperview()
 
         addWordButton.pinToSafeAreaSuperview(sides: [.bottom(-Layout.AddWordButton.bottomAnchor)])
         addWordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -138,25 +138,18 @@ extension WordListViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
 
-        configCell(cell, using: dataSource[indexPath.row])
+        configCell(cell, using: dataSource[indexPath.row], and: indexPath.row)
 
         return cell
     }
 
-    #warning("Вместо randomElement написать helper")
-    private func configCell(_ cell: WordListTableViewCell, using dataSource: DataSource) {
+    private func configCell(_ cell: WordListTableViewCell, using dataSource: DataSource, and index: Int) {
         cell.configCell(
             using: WordListTableViewCell.Model(
                 vocabula: dataSource.vocabula,
                 translation: dataSource.translation,
                 transcription: dataSource.transcription,
-                backgroundColor: Array([
-                    Color.WordListScreen.Cell.backgroundPurple,
-                    Color.WordListScreen.Cell.backgroundGreen,
-                    Color.WordListScreen.Cell.backgroundMagenta,
-                    Color.WordListScreen.Cell.backgroundBlue,
-                    Color.WordListScreen.Cell.backgroundPink
-                ]).randomElement() ?? .systemOrange
+                backgroundColor: CellBackgroundColorHelper.getColor(by: index)
             )
         )
 

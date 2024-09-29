@@ -10,6 +10,7 @@
 		FD018ABF2CA8AB240018177C /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD018ABE2CA8AB240018177C /* RoundedView.swift */; };
 		FD018AC12CA8AB630018177C /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD018AC02CA8AB630018177C /* Label.swift */; };
 		FD018AC32CA8AC600018177C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD018AC22CA8AC600018177C /* RoundButton.swift */; };
+		FD1BB7572CA9F91700C2B469 /* CellBackgroundColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1BB7562CA9F91700C2B469 /* CellBackgroundColorHelper.swift */; };
 		FD33AFAF2C975EF40057CF4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */; };
 		FD33AFB12C975EF40057CF4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */; };
 		FD33AFB82C975EF50057CF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD33AFB72C975EF50057CF4E /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		FD018ABE2CA8AB240018177C /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		FD018AC02CA8AB630018177C /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		FD018AC22CA8AC600018177C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		FD1BB7562CA9F91700C2B469 /* CellBackgroundColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellBackgroundColorHelper.swift; sourceTree = "<group>"; };
 		FD33AFAB2C975EF40057CF4E /* SimpleDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD33AFAE2C975EF40057CF4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD33AFB02C975EF40057CF4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1BB7552CA9F90400C2B469 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD1BB7562CA9F91700C2B469 /* CellBackgroundColorHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FD33AFA22C975EF40057CF4E = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		FD33AFAD2C975EF40057CF4E /* SimpleDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				FD1BB7552CA9F90400C2B469 /* Helpers */,
 				FD94CA672CA4B66900822925 /* BaseComponents */,
 				FD94CA6A2CA575F000822925 /* Extensions */,
 				FDE76CAE2C99CFA90031047F /* Localization */,
@@ -391,6 +402,7 @@
 			files = (
 				FD33AFE52C97859B0057CF4E /* ViewController.swift in Sources */,
 				FD94CA732CA59FBC00822925 /* Colors.swift in Sources */,
+				FD1BB7572CA9F91700C2B469 /* CellBackgroundColorHelper.swift in Sources */,
 				FD018AC32CA8AC600018177C /* RoundButton.swift in Sources */,
 				FD018ABF2CA8AB240018177C /* RoundedView.swift in Sources */,
 				FD33AFAF2C975EF40057CF4E /* AppDelegate.swift in Sources */,
