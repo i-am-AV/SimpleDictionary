@@ -27,7 +27,7 @@ final class TabBarController: UITabBarController {
             rootViewController: WordListViewController()
         )
         wordListNavigationController.config(
-            with: LocalizedString.WordListScreen.title,
+            with: LocalizedString.WordListScreen.NavigationBar.title,
             and: .checkmark
         )
 

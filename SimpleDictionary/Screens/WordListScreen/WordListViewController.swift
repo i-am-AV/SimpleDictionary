@@ -8,9 +8,36 @@
 import UIKit
 
 final class WordListViewController: ViewController {
+    // MARK: - Private nested types
+
+    private enum Constant {
+        enum AddWordButton {
+            static let cornerRadius: CGFloat = 24
+        }
+    }
+
+    private enum Layout {
+        enum AddWordButton {
+            static let bottomAnchor: CGFloat = 30
+            static let verticalSpacings: CGFloat = 12
+            static let horizontalSpacings: CGFloat = 48
+        }
+    }
+
     // MARK: - Private UI properties
 
     private let tableView = UITableView().prepareForAutoLayout()
+
+    private let addWordButton: UIButton = {
+        let button = UIButton().prepareForAutoLayout()
+        button.setTitle(LocalizedString.WordListScreen.AddWordButton.title, for: .normal)
+        button.backgroundColor = .black
+        button.layer.cornerRadius = Constant.AddWordButton.cornerRadius
+        button.tintColor = .white
+        button.titleLabel?.font = Font.WordListScreen.AddButton.title
+
+        return button
+    }()
 
     // MARK: - Private properties
 
@@ -25,6 +52,11 @@ final class WordListViewController: ViewController {
         DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
         DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
         DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
+        DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
+        DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
+        DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
+        DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
+        DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]"),
         DataSource(vocabula: "application", translation: "приложение", transcription: "[æplɪˈkeɪʃn]")
     ]
 
@@ -35,6 +67,7 @@ final class WordListViewController: ViewController {
         setupNavigationBar()
         setupView()
         setupTableView()
+        setupActions()
     }
 }
 
@@ -42,7 +75,7 @@ final class WordListViewController: ViewController {
 
 private extension WordListViewController {
     func setupNavigationBar() {
-        title = LocalizedString.WordListScreen.title
+        title = LocalizedString.WordListScreen.NavigationBar.title
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
@@ -53,10 +86,16 @@ private extension WordListViewController {
 
     func addSubviews() {
         view.addSubview(tableView)
+        view.addSubview(addWordButton)
     }
 
     func makeConstraints() {
         tableView.pinToSafeAreaSuperview()
+
+        addWordButton.pinToSafeAreaSuperview(sides: [.bottom(-Layout.AddWordButton.bottomAnchor)])
+        addWordButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        addWordButton.setHeightAnchor(addWordButton.intrinsicContentSize.height + Layout.AddWordButton.verticalSpacings)
+        addWordButton.setWidthAnchor(addWordButton.intrinsicContentSize.width + Layout.AddWordButton.horizontalSpacings)
     }
 
     func setupTableView() {
@@ -70,6 +109,15 @@ private extension WordListViewController {
             WordListTableViewCell.self,
             forCellReuseIdentifier: WordListTableViewCell.reuseIdentifier
         )
+    }
+
+    func setupActions() {
+        let action = UIAction { [weak self] _ in
+            let viewController = UIViewController()
+            viewController.view.backgroundColor = .red
+            self?.present(viewController, animated: true)
+        }
+        addWordButton.addAction(action, for: .touchUpInside)
     }
 }
 

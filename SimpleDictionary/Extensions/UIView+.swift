@@ -48,6 +48,38 @@ extension UIView {
         )
     }
 
+    func pinToSafeAreaSuperview(sides: [Side]) {
+        guard let superview else {
+            assertionFailure("\(Self.self) must have a superview")
+            return
+        }
+
+        for side in sides {
+            switch side {
+            case .top(let constant):
+                topAnchor.constraint(
+                    equalTo: superview.safeAreaLayoutGuide.topAnchor,
+                    constant: constant
+                ).isActive = true
+            case .bottom(let constant):
+                bottomAnchor.constraint(
+                    equalTo: superview.safeAreaLayoutGuide.bottomAnchor,
+                    constant: constant
+                ).isActive = true
+            case .leading(let constant):
+                leadingAnchor.constraint(
+                    equalTo: superview.safeAreaLayoutGuide.leadingAnchor,
+                    constant: constant
+                ).isActive = true
+            case .trailing(let constant):
+                trailingAnchor.constraint(
+                    equalTo: superview.safeAreaLayoutGuide.trailingAnchor,
+                    constant: constant
+                ).isActive = true
+            }
+        }
+    }
+
     func pinToSuperview(sides: [Side]) {
         guard let superview else {
             assertionFailure("\(Self.self) must have a superview")

@@ -7,9 +7,15 @@
 
 import Foundation
 
+// swiftlint:disable nesting
 enum LocalizedString {
     enum WordListScreen {
-        static let title: String = NSLocalizedString("DictionaryTitle", comment: "")
+        enum NavigationBar {
+            static let title: String = NSLocalizedString("WordListScene.NavigationBar.Title", comment: "")
+        }
+        enum AddWordButton {
+            static let title: String = NSLocalizedString("WordListScene.AddWordButton.Title", comment: "")
+        }
     }
 
     enum TestsScreen {
@@ -20,3 +26,4 @@ enum LocalizedString {
         static let title: String = NSLocalizedString("ProfileTitle", comment: "")
     }
 }
+// swiftlint:enable nesting
