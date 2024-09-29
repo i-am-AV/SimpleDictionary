@@ -5,7 +5,7 @@
 //  Created by Alex Vasilyev on 26.09.2024.
 //
 
-import UIKit
+import UIKit.UIFont
 
 // swiftlint:disable nesting
 enum Font {
