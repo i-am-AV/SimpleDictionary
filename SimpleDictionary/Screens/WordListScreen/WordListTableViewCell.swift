@@ -124,14 +124,12 @@ private extension WordListTableViewCell {
     // swiftlint:enable nesting
 
     func setupCell() {
-        contentView.isUserInteractionEnabled = false
-
         addSubviews()
         makeConstraints()
     }
 
     func addSubviews() {
-        addSubview(roundedBackgroundView)
+        contentView.addSubview(roundedBackgroundView)
         roundedBackgroundView.addSubview(vocabulaLabel)
         roundedBackgroundView.addSubview(translationLabel)
         roundedBackgroundView.addSubview(transcriptionLabel)

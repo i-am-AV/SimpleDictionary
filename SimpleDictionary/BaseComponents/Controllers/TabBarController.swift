@@ -60,7 +60,7 @@ private extension UINavigationController {
         guard
             let rootViewController = viewControllers.first
         else {
-            assertionFailure("No root controller has been assigned ")
+            assertionFailure("No root controller has been assigned")
             return
         }
         rootViewController.title = title
