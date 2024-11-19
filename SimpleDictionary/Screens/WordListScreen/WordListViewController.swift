@@ -112,10 +112,9 @@ private extension WordListViewController {
     }
 
     func setupActions() {
-        let action = UIAction { [weak self] _ in
-            let viewController = UIViewController()
-            viewController.view.backgroundColor = .red
-            self?.present(viewController, animated: true)
+        // да, это жестко
+        let action = UIAction { [unowned(unsafe) self] _ in
+            self.present(NewWordViewController(), animated: true)
         }
         addWordButton.addAction(action, for: .touchUpInside)
     }

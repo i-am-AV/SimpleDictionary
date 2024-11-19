@@ -27,6 +27,8 @@
 		FD94CA692CA575E900822925 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94CA682CA575E900822925 /* UIView+.swift */; };
 		FD94CA702CA581F900822925 /* WordListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94CA6F2CA581F900822925 /* WordListTableViewCell.swift */; };
 		FD94CA732CA59FBC00822925 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94CA722CA59FBC00822925 /* Colors.swift */; };
+		FDE629702CB5CFCC0073FDA6 /* NewWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE6296F2CB5CFCC0073FDA6 /* NewWordViewController.swift */; };
+		FDE629722CB69F410073FDA6 /* AddingWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE629712CB69F410073FDA6 /* AddingWordView.swift */; };
 		FDE76CAB2C98D6660031047F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FDE76CAA2C98D6660031047F /* Localizable.xcstrings */; };
 		FDE76CAD2C99CDAE0031047F /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE76CAC2C99CDAE0031047F /* LocalizedString.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		FD94CA682CA575E900822925 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		FD94CA6F2CA581F900822925 /* WordListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListTableViewCell.swift; sourceTree = "<group>"; };
 		FD94CA722CA59FBC00822925 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FDE6296F2CB5CFCC0073FDA6 /* NewWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWordViewController.swift; sourceTree = "<group>"; };
+		FDE629712CB69F410073FDA6 /* AddingWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingWordView.swift; sourceTree = "<group>"; };
 		FDE76CAA2C98D6660031047F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		FDE76CAC2C99CDAE0031047F /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +198,7 @@
 		FD94CA6B2CA5767000822925 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FDE6296E2CB5CD6B0073FDA6 /* NewWordScreen */,
 				FD94CA712CA5820D00822925 /* WordListScreen */,
 				FD33AFE02C9783AF0057CF4E /* TestsViewController.swift */,
 				FD33AFE22C9783D60057CF4E /* ProfileViewController.swift */,
@@ -235,6 +240,15 @@
 				FD94CA6F2CA581F900822925 /* WordListTableViewCell.swift */,
 			);
 			path = WordListScreen;
+			sourceTree = "<group>";
+		};
+		FDE6296E2CB5CD6B0073FDA6 /* NewWordScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FDE629712CB69F410073FDA6 /* AddingWordView.swift */,
+				FDE6296F2CB5CFCC0073FDA6 /* NewWordViewController.swift */,
+			);
+			path = NewWordScreen;
 			sourceTree = "<group>";
 		};
 		FDE76CAE2C99CFA90031047F /* Localization */ = {
@@ -404,6 +418,7 @@
 				FD94CA732CA59FBC00822925 /* Colors.swift in Sources */,
 				FD1BB7572CA9F91700C2B469 /* CellBackgroundColorHelper.swift in Sources */,
 				FD018AC32CA8AC600018177C /* RoundButton.swift in Sources */,
+				FDE629722CB69F410073FDA6 /* AddingWordView.swift in Sources */,
 				FD018ABF2CA8AB240018177C /* RoundedView.swift in Sources */,
 				FD33AFAF2C975EF40057CF4E /* AppDelegate.swift in Sources */,
 				FD33AFDF2C9763840057CF4E /* WordListViewController.swift in Sources */,
@@ -417,6 +432,7 @@
 				FD94CA652CA4B3B800822925 /* Fonts.swift in Sources */,
 				FD94CA702CA581F900822925 /* WordListTableViewCell.swift in Sources */,
 				FD33AFB12C975EF40057CF4E /* SceneDelegate.swift in Sources */,
+				FDE629702CB5CFCC0073FDA6 /* NewWordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

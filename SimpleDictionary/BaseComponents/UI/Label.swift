@@ -8,10 +8,12 @@
 import UIKit.UILabel
 
 final class Label: UILabel {
-    init(font: UIFont, textColor: UIColor) {
+    init(_ defaultText: String? = nil, font: UIFont, textColor: UIColor, numberOfLines: Int = 1) {
         super.init(frame: .zero)
+        self.text = defaultText
         self.font = font
         self.textColor = textColor
+        self.numberOfLines = numberOfLines
     }
 
     @available(*, unavailable)

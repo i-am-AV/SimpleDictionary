@@ -103,4 +103,17 @@ extension UIView {
             }
         }
     }
+
+    func pinToSuperview(excluding side: Side) {
+        switch side {
+        case .top:
+            pinToSuperview(sides: [.bottom(), .leading(), .trailing()])
+        case .bottom:
+            pinToSuperview(sides: [.top(), .leading(), .trailing()])
+        case .leading:
+            pinToSuperview(sides: [.top(), .bottom(), .trailing()])
+        case .trailing:
+            pinToSuperview(sides: [.top(), .bottom(), .leading()])
+        }
+    }
 }
