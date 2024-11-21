@@ -48,29 +48,29 @@ final class WordListTableViewCell: UITableViewCell {
 
     private let vocabulaLabel = Label(
         font: Font.WordListScreen.Cell.title,
-        textColor: Color.WordListScreen.Cell.title
+        textColor: AppColor.black
     ).prepareForAutoLayout()
 
     private let translationLabel = Label(
         font: Font.WordListScreen.Cell.subtitle,
-        textColor: Color.WordListScreen.Cell.subtitle
+        textColor: AppColor.white
     ).prepareForAutoLayout()
 
     private let transcriptionLabel = Label(
         font: Font.WordListScreen.Cell.subtitle2,
-        textColor: Color.WordListScreen.Cell.subtitle2
+        textColor: AppColor.grayText
     ).prepareForAutoLayout()
 
     let playButton = RoundButton(
         sideSize: Constant.Button.sideSize,
         image: Image.WordListScreen.Cell.play,
-        backgroundColor: .black
+        backgroundColor: AppColor.black
     ).prepareForAutoLayout()
 
     let addButton = RoundButton(
         sideSize: Constant.Button.sideSize,
         image: Image.WordListScreen.Cell.plus,
-        backgroundColor: .black
+        backgroundColor: AppColor.black
     ).prepareForAutoLayout()
 
     // MARK: - Internal methods

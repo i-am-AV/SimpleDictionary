@@ -17,14 +17,6 @@ enum AddingWordView1 {
     }
 }
 
-// color
-
-enum AddingWordView2 {
-    enum TextField {
-        static let transcription: UIColor = UIColor(red: 181/255, green: 181/255, blue: 181/255, alpha: 1)
-    }
-}
-
 final class TextField: UITextField {
     init(
         placeholder: String? = nil,
@@ -65,7 +57,7 @@ final class AddingWordView: UIView {
     // MARK: - Private UI properties
     private let vocabulaTextField = TextField(
         font: AddingWordView1.TextField.vocabula,
-        tintColor: .black,
+        tintColor: AppColor.black,
         isFirstResponder: true
     ).prepareForAutoLayout()
 
@@ -73,32 +65,32 @@ final class AddingWordView: UIView {
     private let placeholderLabel = Label(
         "Введите новое слово",
         font: .systemFont(ofSize: 34, weight: .medium, width: .expanded),
-        textColor: UIColor(red: 60/255, green: 60/255, blue: 67/255, alpha: 0.6),
+        textColor: AppColor.placeholderText,
         numberOfLines: .zero
     ).prepareForAutoLayout()
 
     private let transcriptionTextField = TextField(
         font: AddingWordView1.TextField.transcription,
-        textColor: AddingWordView2.TextField.transcription,
-        tintColor: .black,
+        textColor: AppColor.grayText,
+        tintColor: AppColor.black,
         isHidden: true
     ).prepareForAutoLayout()
 
     private let transcriptionActivity: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .large).prepareForAutoLayout()
-        activityIndicator.color = .black
+        activityIndicator.color = AppColor.black
         return activityIndicator
     }()
 
     private let translationTextField = TextField(
         font: AddingWordView1.TextField.translation,
-        tintColor: .black,
+        tintColor: AppColor.black,
         isHidden: true
     ).prepareForAutoLayout()
 
     private let translationActivity: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .large).prepareForAutoLayout()
-        activityIndicator.color = .black
+        activityIndicator.color = AppColor.black
         return activityIndicator
     }()
 
@@ -217,13 +209,11 @@ private extension AddingWordView {
     }
 }
 
-#warning("Не забыть удалить")
+#if canImport(SwiftUI) && DEBUG
 import SwiftUI
 struct SwiftUIAddingWordView: UIViewRepresentable {
-    // 1
     func makeUIView(context: Context) -> AddingWordView {
         return AddingWordView()
-
     }
     func updateUIView(_ view: AddingWordView, context: Context) {}
 }
@@ -233,3 +223,4 @@ struct AddingWordView_Previews: PreviewProvider {
         SwiftUIAddingWordView()
     }
 }
+#endif

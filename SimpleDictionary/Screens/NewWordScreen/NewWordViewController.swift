@@ -31,7 +31,6 @@ private extension NewWordViewController {
     }
 }
 
-#warning("Не забыть удалить")
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
 struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControllerRepresentable {
@@ -46,7 +45,7 @@ struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControll
         viewController
     }
 }
-#endif
+
 struct ViewController_Previews: PreviewProvider {
     static var previews: some View {
         UIViewControllerPreview {
@@ -54,3 +53,4 @@ struct ViewController_Previews: PreviewProvider {
         }
     }
 }
+#endif

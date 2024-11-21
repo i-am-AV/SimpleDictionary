@@ -23,6 +23,6 @@ class ViewController: UIViewController {
     }
 
     private func setupView() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = AppColor.mainBackground
     }
 }

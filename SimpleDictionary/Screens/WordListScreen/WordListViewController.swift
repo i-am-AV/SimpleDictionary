@@ -31,9 +31,9 @@ final class WordListViewController: ViewController {
     private let addWordButton: UIButton = {
         let button = UIButton().prepareForAutoLayout()
         button.setTitle(LocalizedString.WordListScreen.AddWordButton.title, for: .normal)
-        button.backgroundColor = .black
+        button.backgroundColor = AppColor.black
         button.layer.cornerRadius = Constant.AddWordButton.cornerRadius
-        button.tintColor = .white
+        button.tintColor = AppColor.white
         button.titleLabel?.font = Font.WordListScreen.AddButton.title
 
         return button
@@ -148,7 +148,7 @@ extension WordListViewController: UITableViewDataSource, UITableViewDelegate {
                 vocabula: dataSource.vocabula,
                 translation: dataSource.translation,
                 transcription: dataSource.transcription,
-                backgroundColor: CellBackgroundColorHelper.getColor(by: index)
+                backgroundColor: AppColor.getCellBackgroundColor(by: index)
             )
         )
 
@@ -159,5 +159,15 @@ extension WordListViewController: UITableViewDataSource, UITableViewDelegate {
         cell.add = {
             print(#function)
         }
+    }
+}
+
+private extension AppColor {
+    /// Статический метод для получения цвета ячейки.
+    ///
+    /// В ячейках на экране **WordListScreen** последовательно используются  цвета из **AppColor.backgroundColors**.
+    /// Метод помогает получить актуальный цвет по индексу.
+    static func getCellBackgroundColor(by index: Int) -> UIColor {
+        return backgroundColors[index % backgroundColors.count]
     }
 }

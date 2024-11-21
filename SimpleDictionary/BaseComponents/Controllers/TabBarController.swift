@@ -19,7 +19,7 @@ final class TabBarController: UITabBarController {
     // MARK: - Private methods
 
     private func setupTabBar() {
-        tabBar.tintColor = .black
+        tabBar.tintColor = AppColor.black
     }
 
     private func setupControllers() {
