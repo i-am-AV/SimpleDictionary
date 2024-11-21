@@ -34,7 +34,7 @@ final class WordListViewController: ViewController {
         button.backgroundColor = AppColor.black
         button.layer.cornerRadius = Constant.AddWordButton.cornerRadius
         button.tintColor = AppColor.white
-        button.titleLabel?.font = Font.WordListScreen.AddButton.title
+        button.titleLabel?.font = AppFont.buttonTitleSmall
 
         return button
     }()

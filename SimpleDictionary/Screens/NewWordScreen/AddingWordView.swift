@@ -7,16 +7,6 @@
 
 import UIKit
 
-// font
-
-enum AddingWordView1 {
-    enum TextField {
-        static let vocabula: UIFont = UIFont.systemFont(ofSize: 34, weight: .medium, width: .expanded)
-        static let transcription: UIFont = UIFont.systemFont(ofSize: 34, weight: .regular, width: .expanded)
-        static let translation: UIFont = UIFont.systemFont(ofSize: 34, weight: .regular, width: .condensed)
-    }
-}
-
 final class TextField: UITextField {
     init(
         placeholder: String? = nil,
@@ -56,7 +46,7 @@ final class AddingWordView: UIView {
 
     // MARK: - Private UI properties
     private let vocabulaTextField = TextField(
-        font: AddingWordView1.TextField.vocabula,
+        font: AppFont.inputText,
         tintColor: AppColor.black,
         isFirstResponder: true
     ).prepareForAutoLayout()
@@ -64,13 +54,13 @@ final class AddingWordView: UIView {
     #warning("Локализовать")
     private let placeholderLabel = Label(
         "Введите новое слово",
-        font: .systemFont(ofSize: 34, weight: .medium, width: .expanded),
+        font: AppFont.inputText,
         textColor: AppColor.placeholderText,
         numberOfLines: .zero
     ).prepareForAutoLayout()
 
     private let transcriptionTextField = TextField(
-        font: AddingWordView1.TextField.transcription,
+        font: AppFont.inputText2,
         textColor: AppColor.grayText,
         tintColor: AppColor.black,
         isHidden: true
@@ -83,7 +73,7 @@ final class AddingWordView: UIView {
     }()
 
     private let translationTextField = TextField(
-        font: AddingWordView1.TextField.translation,
+        font: AppFont.inputText3,
         tintColor: AppColor.black,
         isHidden: true
     ).prepareForAutoLayout()

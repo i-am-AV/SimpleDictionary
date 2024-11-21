@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     // MARK: - Private methods
 
     private func setupNavigationBar() {
+        let attributes: [NSAttributedString.Key: Any] = [.font: AppFont.title]
+        navigationController?.navigationBar.largeTitleTextAttributes = attributes
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 

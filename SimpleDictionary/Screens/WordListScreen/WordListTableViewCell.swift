@@ -47,17 +47,17 @@ final class WordListTableViewCell: UITableViewCell {
     ).prepareForAutoLayout()
 
     private let vocabulaLabel = Label(
-        font: Font.WordListScreen.Cell.title,
+        font: AppFont.cellTitle,
         textColor: AppColor.black
     ).prepareForAutoLayout()
 
     private let translationLabel = Label(
-        font: Font.WordListScreen.Cell.subtitle,
+        font: AppFont.cellSubtitle2,
         textColor: AppColor.white
     ).prepareForAutoLayout()
 
     private let transcriptionLabel = Label(
-        font: Font.WordListScreen.Cell.subtitle2,
+        font: AppFont.cellSubtitle,
         textColor: AppColor.grayText
     ).prepareForAutoLayout()
 
